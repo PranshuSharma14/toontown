@@ -1,0 +1,170 @@
+/* Basic Styles */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #87783a, #bb340a); /* Bright yellow to orange gradient */
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    background: linear-gradient(45deg, #965b68, #61291f); /* Bright pink to vibrant orange */
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #ffffff; /* White for better contrast */
+    text-decoration: none;
+    font-size: 1.3rem; /* Slightly larger font */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b; /* Bright yellow for hover effect */
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+/* Landing Page Header */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    color: #ff5722;
+    text-shadow: 0 0 20px #ffcc00; /* Yellow glow */
+    position: relative;
+}
+
+.glow-text {
+    font-size: 5rem;
+    margin-top: 20px;
+    text-shadow: 0 0 20px #ffcc00, 0 0 30px #ffcc00; /* Brighter glow */
+}
+
+header p {
+    font-size: 2.5rem;
+    color: #ffcc00; /* Bright yellow for the header text */
+}
+
+/* Cartoon Animation */
+.cartoon-animation {
+    width: 150px;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* About Section */
+section {
+    padding: 60px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly opaque white for contrast */
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #6200ea; /* Vivid blue */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Funny Icon */
+.funny-icon {
+    width: 100px;
+    margin-top: 20px;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Adventure Section */
+#adventures {
+    background-color: #ff4081; /* Bright pink for the adventure section */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    display: flex;              /* Use flexbox */
+    flex-direction: column;     /* Stack elements vertically */
+    align-items: center;        /* Center items horizontally */
+    justify-content: center;    /* Center items vertically */
+}
+
+/* Button styles */
+.button {
+    background: #ff5722; /* Vivid orange */
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 0 15px #ff5722; /* Match button shadow to button color */
+    transition: background 0.3s, box-shadow 0.3s; /* Smooth transition */
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.2rem; /* Slightly larger font */
+}
+
+.button:hover {
+    background: #ff4081; /* Change to bright pink on hover */
+    box-shadow: 0 0 30px #ff5722;
+}
+
+/* Adventure Cartoon */
+.adventure-animation {
+    width: 150px;
+    margin-top: 20px;
+    animation: shake 0.5s infinite alternate;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-5px); }
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker footer */
+    color: #ffeb3b; /* Bright yellow for footer text */
+    padding: 20px 0;          /* Increased padding for a better look */
+    text-align: center;
+    margin-top: 60px;         /* Add margin to create space above */
+}
